@@ -1,0 +1,13 @@
+{
+    "name": "koban/payment-handlers",
+    "description": "Small payment processing library for Rafinita SALE flow",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "PaymentHandlers\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.4"
+    }
+}
