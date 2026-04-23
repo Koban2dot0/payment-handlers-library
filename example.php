@@ -61,7 +61,7 @@ $rawData = [
     'cardExpYear' => '2038',
     'cvv' => '123',
     'customerEmail' => 'success@gmail.com',
-    'amount' => 1500.50,
+    'amount' => 0.01,
     'currency' => 'USD',
     'orderDescription' => 'Test payment',
     'firstName' => 'John',
@@ -76,6 +76,8 @@ $rawData = [
 ];
 
 $result = $processor->process($paymentFromDb, $rawData);
+
+var_dump($result);
 
 echo $result->status . PHP_EOL;
 echo $result->message . PHP_EOL;
